@@ -40,12 +40,19 @@ a:active {
   padding: 20px;
 }
 
+.hero-wrapper {
+  background: linear-gradient(rgba(7, 22, 41, 0.1), rgba(7, 22, 41, 0.1)),
+              url('images/headphones_hero_1.jpg') no-repeat center center/cover;
+}
+
+
 /* ========== HEADER ========== */
 .header {
   background-color: transparent;
   padding: 20px 0;
   position: relative;
   z-index: 10;
+  font-size: strong;
 }
 
 .header .container {
@@ -73,7 +80,7 @@ a:active {
 
 /* ========== HERO SECTION ========== */
 .hero {
-  background: url('images/headphones_hero_1.jpg') no-repeat center center/cover;
+  /* background: url('images/headphones_hero_1.jpg') no-repeat center center/cover; */
   text-align: center;
   padding: 100px 20px;
   position: relative;
@@ -82,13 +89,13 @@ a:active {
 .hero-content h1 {
   font-size: 32px;
   font-weight: 700;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 .hero-content h2 {
   font-size: 18px;
   font-weight: 300;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .hero-content p {
@@ -109,6 +116,7 @@ a:active {
   cursor: pointer;
   transition: opacity 0.3s;
   display: inline-block;
+  text-transform: uppercase;
 }
 
 .btn:hover,
@@ -117,27 +125,112 @@ a:active {
 }
 
 /* ========== RESPONSIVE DESIGN ========== */
-@media screen and (max-width: 480px) {
+/* @media screen and (max-width: 480px) {
   .nav ul {
     flex-direction: column;
     align-items: center;
     gap: 15px;
-  }
+  }*/
 
-  .hero-content h1 {
+  /* .hero-content h1 {
     font-size: 24px;
+    line-height: 1.2;
   }
 
   .hero-content h2 {
-    font-size: 16px;
-  }
+    font-size: 10px;
+    margin-bottom: 40px;
+  } */
 
-  .hero-content p {
+  /* .hero-content p {
     font-size: 13px;
+    padding: 0 10px;
   }
 
   .btn {
     padding: 10px 25px;
     font-size: 13px;
   }
+
+  .logo img {
+  height: 24px;
+  } */
+
+  .burger {
+  display: none;
+  }
+
+  @media screen and (max-width: 480px) {
+  .burger {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+  }
+
+  .burger span {
+    width: 25px;
+    height: 3px;
+    background: var(--text-color);
+    border-radius: 2px;
+  }*/
+
+  /* ======== Burger icon (label) ======== */
+.burger-icon {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+  z-index: 1000;
 }
+
+.burger-icon span {
+  width: 25px;
+  height: 3px;
+  background: var(--text-color);
+  border-radius: 2px;
+}
+
+/* ======== Hide checkbox ======== */
+.menu-toggle {
+  display: none;
+}
+
+/* ======== Mobile nav menu ======== */
+@media screen and (max-width: 480px) {
+  .burger-icon {
+    display: flex;
+    margin-left: auto;
+  }
+
+  .nav {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(7, 22, 41, 0.95);
+    text-align: center;
+    padding: 30px 0;
+    z-index: 500;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  /* Show menu when checkbox is checked */
+  .menu-toggle:checked + .burger-icon + .nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Optional: reposition logo and nav container */
+  .header .container {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+/* } */
