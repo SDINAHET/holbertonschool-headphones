@@ -124,6 +124,59 @@ a:active {
   opacity: 0.9; /* pas besoin de changer l’opacité */
 }
 
+/* ========== WHAT WE DO SECTION ========== */
+.what-we-do {
+  padding: 80px 20px;
+  background-color: #fff;
+  color: #060000;
+  text-align: center;
+  /* border: 5px solid red; pour tester visuellement */
+}
+
+.what-we-do h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.what-we-do-description {
+  max-width: 700px;
+  margin: 0 auto 60px;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.service {
+  flex: 0 1 200px;
+  max-width: 220px;
+}
+
+.service i {
+  font-size: 60px;
+  color: var(--main-color);
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.service h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.service p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+
 /* ========== BURGER ICON ========== */
 .burger-icon {
   display: none;
@@ -450,10 +503,10 @@ a:active {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    position: fixed;
+    /* position: fixed; */
     /* position: static; */
     /* top: 70px; espace sous le logo */
-    /* position: absolute; */
+    position: absolute;
     /* position: relative; */
     top: 50px; /* ajusté sous le logo */
     /* bottom: 200px; */
@@ -495,8 +548,6 @@ a:active {
     font-size: 18px;
     text-transform: lowercase;
   }
-}
 
-}
 
 
