@@ -176,6 +176,123 @@ a:active {
   line-height: 1.5;
 }
 
+/* our results section
+      ============================= */
+
+#our-results {
+	background-image: url("./images/headphones_hero_2.jpg");
+	height: 650px;
+	width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#our-results {
+	color: var(--text-color);
+}
+
+#our-results .top h1 {
+	padding-top: 10rem;
+}
+
+#our-results .container {
+	justify-content: space-between;
+	max-width: 70%;
+}
+
+#our-results .sub-container {
+	box-sizing : border-box;
+	position : relative;
+	width : 170px;
+	height : 156px;
+	background-color : var(--text-hover);
+	margin : 35px 0;
+	clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+	justify-content: center;
+  }
+
+#our-results h2 {
+	font-size: 46px;
+	font-weight: bold;
+	margin: 0;
+	margin-top: 2rem;
+}
+
+#our-results p {
+	font-size: 14px;
+	margin-bottom: 1rem;
+}
+
+#our-results .container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 60px;
+}
+
+.sub-container {
+  position: relative;
+  width: 170px;
+  height: auto;
+}
+
+.sub-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.text-overlay h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.text-overlay p {
+  margin: 0;
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 1000px) {
+	#our-results .container {
+		justify-content: center;
+		max-width: 60%;
+		gap: 0 5rem;
+	}
+	#our-results {
+		height: auto;
+		width: auto;
+		background-position: top;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	#our-results .top-img {
+	background-image: url("images/headphones_hero_2.jpg");
+	height: 650px;
+	width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-bottom: -12rem;
+	}
+	#our-results {
+		background-color: #071629;
+		background-image: none;
+	}
+}
+
 
 /* ========== BURGER ICON ========== */
 .burger-icon {
@@ -294,6 +411,78 @@ a:active {
     gap: 30px;
   }
 }
+
+
+
+
+/* ========== CONTACT SECTION ========== */
+.contact {
+  background-color: #fff;
+  color: #071629;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px 15px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: none;
+}
+
+/* ========== FOOTER ========== */
+.footer {
+  background-color: #071629;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-logo {
+  height: 30px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.social-icons img {
+  width: 20px;
+  height: 20px;
+}
+
+@media screen and (max-width: 480px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+
+
 
 /* ========== BURGER ICON ========== */
 .burger-icon {
@@ -548,6 +737,27 @@ a:active {
     font-size: 18px;
     text-transform: lowercase;
   }
+
+@media screen and (max-width: 768px) {
+  .results-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .result {
+    margin-bottom: 20px;
+  }
+}
+ @media screen and (max-width: 768px) {
+  .results-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .result {
+    margin-bottom: 20px;
+  }
+}
 
 
 
