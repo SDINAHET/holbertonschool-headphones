@@ -376,6 +376,99 @@ a:active {
   }
 }
 
+/* ========== CONTACT SECTION ========== */
+.contact {
+  background-color: #fff;
+  color: #071629;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #071629;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+}
+
+.contact-form label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #071629;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0px 0px;
+  font-size: 14px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  background: transparent;
+  outline: none;
+  margin-bottom: 20px; /* ou même 5px */
+  resize: none;
+  height: 5px; /* identique aux inputs */
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-bottom: 2px solid #FF6565;
+}
+
+.contact-form .btn {
+  width: fit-content;
+  padding: 12px 30px;
+  align-self: center; /* pour centrer le bouton */
+  margin-top: 30px; /* <-- Ajouté */
+}
+
+
+
+/* ========== FOOTER ========== */
+.footer {
+  background-color: #071629;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-logo {
+  height: 30px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.social-icons img {
+  width: 20px;
+  height: 20px;
+}
+
+@media screen and (max-width: 480px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+
 
 /* ========== BURGER ICON ========== */
 .burger-icon {
@@ -498,71 +591,6 @@ a:active {
 
 
 
-/* ========== CONTACT SECTION ========== */
-.contact {
-  background-color: #fff;
-  color: #071629;
-  padding: 80px 20px;
-  text-align: center;
-}
-
-.contact h2 {
-  font-size: 32px;
-  margin-bottom: 40px;
-}
-
-.contact-form {
-  max-width: 500px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.contact-form input,
-.contact-form textarea {
-  padding: 10px 15px;
-  font-size: 14px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  resize: none;
-}
-
-/* ========== FOOTER ========== */
-.footer {
-  background-color: #071629;
-  color: white;
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.footer-logo {
-  height: 30px;
-}
-
-.social-icons {
-  display: flex;
-  gap: 20px;
-}
-
-.social-icons img {
-  width: 20px;
-  height: 20px;
-}
-
-@media screen and (max-width: 480px) {
-  .footer-content {
-    flex-direction: column;
-    gap: 20px;
-  }
-}
 
 
 
